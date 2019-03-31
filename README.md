@@ -35,3 +35,6 @@ for col in range(sheet.ncols):
     mqttc.publish("sensor/text3", payload=sheet.cell_value(3,col), qos=0)
     if col == 11:
         mqttc.publish("sensor/olcum", payload="OK", qos=0)
+```
+# Download this Excel file and change directory folder with your. 
+https://github.com/umitkose1/iot_demo_app/issues/1#issue-427453693
