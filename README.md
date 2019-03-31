@@ -19,7 +19,7 @@ import time
 mqttc = mqtt.Client("client1", clean_session=False)
 mqttc.username_pw_set("wtuaxeda", "UkFVlYUdK-3w")
 mqttc.connect("m16.cloudmqtt.com", 16188, 60)
-file_location = "C:\Users\Admin\Desktop\Python/test_data.xlsx"
+file_location = "C:\Users\Admin\Desktop\Python/test_data.xlsx"   // Download excel folder at attachment and change directory with your.
 workbook = xlrd.open_workbook(file_location)
 sheet = workbook.sheet_by_index(0)
 sheet.cell_value(0,0)
